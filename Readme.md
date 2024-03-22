@@ -1,5 +1,6 @@
 # Profile Card 🃏👤
-<img width="617" alt="Screenshot 2024-01-09 224601" src="https://github.com/yashvisharma1204/Profile_Card/assets/137611141/1e445c15-8d8a-48cb-aca9-034b88448a88">
+<img width="808" alt="image" src="https://github.com/yashvisharma1204/Profile_Card/assets/137611141/750f1eb8-c2ba-4e72-ba25-5a386973cac6">
+
 
 Unveil Your Identity with Style! Create captivating profile cards with this simple HTML and CSS project.
 
