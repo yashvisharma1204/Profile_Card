@@ -7,7 +7,7 @@
 .container{
     width:100%;
     min-height: 100vh;
-    background: linear-gradient(135deg,#e3adb3,#c12f43);
+    background: linear-gradient(135deg,rgb(231, 249, 255),rgb(145, 213, 237),rgb(0, 145, 198));
     padding:10px;
 }
 .card{
@@ -31,13 +31,13 @@
     backface-visibility: hidden;
 }
 .front{
-    background: url(Profilecard/amir-esrafili-X8Cao0DbiDg-unsplash.jpg);
-    background-size:150%;
+    background: url(https://i.pinimg.com/564x/ff/19/dc/ff19dc822b8b973106d7901441f54f61.jpg);
+    background-size:100%;
     background-position: center;
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 }
 .front h2{
@@ -49,19 +49,19 @@
     font-size: 13px;
 }
 .front button{
-    justify-content:end ;
+    justify-content:end;
     width:120px;
     border: 0;
-    background: rgba(255, 99, 120, 0.365);
+    background: rgba(99, 213, 255, 0.511);
     border-radius: 50px;
     padding: 8px 20px;
     cursor:pointer;
-    margin-top: 20px;
+    margin-top: 250px;
     color:white;
 }
 .back{
     background-color:white;
-    color:#c12f43;
+    color:#C63500;
     padding: 20px 40px;
     border-radius: 15px;
     transform: rotateY(180deg);
@@ -72,20 +72,21 @@
 .back h1{
     font-size:40px;
     line-height: 55px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight:900;
 }
 .back h1 span{
     font-weight: 200;
-    font-size: 30px;
+    font-size: 0px;
 }
 .back p{
     font-size: 14px;
+    margin-bottom: 0px;
 }
 .row{
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .col{
     flex: 1;
@@ -96,12 +97,14 @@
 }
 .col h2{
     font-size:20px;
+    color:#C63500;
+    text-align: center;
 }
 .col::after{
     content: "";
     width:2px;
     height:20px;
-    background:#c12f43;
+    background:rgb(0, 145, 198);
     position: absolute;
     top:5px;
     right:0;
@@ -112,18 +115,22 @@
 .col p{
     margin-top: 5px;
 }
-.back button{
-    background-color:#c12f43;
+.back .col button {
+    background-color:rgb(228, 191, 4);
     color:white;
     border: 0;
     outline: 0;
     padding: 8px 25px;
     border-radius:30px;
     font-size: 14px;
-    margin-right: 15px;
-    box-shadow: 0 8px 10px rgba(173, 0, 40, 0.3);
+    margin:0 15px;
+    box-shadow: 0 8px 10px rgba(133, 100, 1, 0.3);
 }
-.back a{
+.back .col button a{
+    text-decoration: None;
+    color: white;
+}
+.row a.fllw{
     width:40px;
     height: 40px;
     border-radius: 50%;
@@ -136,10 +143,14 @@
 }
 .fa-brands{
     font-size: 25px;
-    color:#c12f43;
+    color:#C63500;
 }
 .card:hover .card-inner{
     transform: rotateY(180deg);
+}
+#file{
+    text-align: center;
+    justify-content: center;
 }
 @media only screen and (max-width: 600px){
     .card{
@@ -148,24 +159,52 @@
         margin: 100px auto 0;
         perspective: 1000px;
     }
+    .front {
+        font-size: 12px;
+    }
+    .front p{
+        font-size: 9px;
+    }
+    .front button{
+        justify-content:left;
+        font-size: 10px;
+        background: rgba(99, 213, 255, 0.502);
+        font-weight: 300;
+    }
     .card-inner{
         width:100%;
         height:100%;
     }
     .back img{
-        width:60px;
+        width:45px;
     }
     .back h1{
-        font-size:30px;
+        font-size:22px;
     }
     .back h1 span{
         font-weight: 200;
         font-size: 15px;
     }
     .back p{
-        font-size: 12px;
+        font-size: 10px;
     }
     .col h2{
-        font-size:15px;
+        font-size:10px;
     }
+
+    /* New styles */
+    .row a.portfolio-link {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .row a.portfolio-link:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+}
+
+.card-inner:hover {
+    transform: rotateY(0deg);
 }
