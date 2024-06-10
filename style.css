@@ -176,17 +176,17 @@
         height:100%;
     }
     .back img{
-        width:45px;
+        width:50px;
     }
     .back h1{
         font-size:22px;
     }
     .back h1 span{
         font-weight: 200;
-        font-size: 15px;
+        font-size: 25px;
     }
     .back p{
-        font-size: 10px;
+        font-size: 12px;
     }
     .col h2{
         font-size:10px;
